@@ -2,7 +2,13 @@
 @nice-blue:#5897fb;
 @nice-gray:#e3e3e3;
 
-body{background: @nice-gray;}
+body{
+	background: @nice-gray;
+	font-size: 14px;
+	color: #333;
+}
+li{list-style-type: none;}
+a{text-decoration: none;}
 
 .clear{
 	clear: both;
@@ -85,4 +91,24 @@ body{background: @nice-gray;}
 .sanjiao{
 	.sanjiao-mode(bnn);
 	float: left;
+}
+
+.list{
+	.section();
+	width: 45%;
+	li{
+		background: url('../images/list-bg.png') no-repeat;
+		background-position: 0 50%;
+		line-height: 32px;
+		text-indent: 10px;
+		& a:hover,&:hover{
+			color:red;
+		}
+	}
+	a{
+		color: #333;
+	}
+	span{
+		float: right;
+	}
 }
