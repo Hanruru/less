@@ -1,0 +1,20 @@
+@nice-blue:#5897fb;
+
+#box{
+	color: @nice-blue;
+	.border;
+	.radius(10px);
+}
+
+.border{
+	border-right: 3px solid #f99;
+	border-left: 3px solid gray;
+	border-top: 3px solid green;
+	border-bottom: 3px solid blue;
+}
+
+.radius(@radius){
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
